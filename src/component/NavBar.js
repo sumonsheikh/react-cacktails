@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import logo from './logo.svg'
+import logo from '../logo.svg'
 const NavBar= ()=> {
     return (
         <nav className='navbar'>
@@ -20,3 +20,4 @@ const NavBar= ()=> {
         </nav>
     )
 }
+export default NavBar
