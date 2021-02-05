@@ -51,3 +51,9 @@ code {
 .logo{
   width: 12rem;
 }
+/* ======= ABOUT US ======== */
+.about-section{
+  width: 85vw;
+  max-width: 40rem;
+  margin: 0 auto;
+}
