@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = ()=> {
     return (
-        <section className="section about-sectoin">
+        <section className="section about-section">
             <h1 className="section-title">About Us</h1>
             <p>
             Branch 'main' set up to track remote branch 'main' from 'origin'.
