@@ -15,6 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a{
+  text-decoration: none;
+}
 /* ======== NAVBAR =========== */
 .navbar{
   height: 4rem;
@@ -54,12 +57,12 @@ code {
   width: 12rem;
 }
 /* ======= ABOUT US ======== */
-.about-section, .error-page{
+.about-section{
   width: 85vw;
   max-width: 40rem;
   margin: 0 auto;
 }
-.about-section h1, .error-container h2{
+.about-section h1{
   padding-top: 2rem 0;
   text-align: center;
   margin-top: 40px;
@@ -70,6 +73,20 @@ code {
   font-weight: 400;
 }
 
+.error-page{
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.error-container h2{
+  margin: 20px;
+  color: #476A2E;
+}
 .btn{
-  
+  background: #476A2E;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 20px;
+  border-radius: 5px;
 }
