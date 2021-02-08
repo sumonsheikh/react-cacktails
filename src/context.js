@@ -7,6 +7,14 @@ const AppProvider = ({children}) =>{
     const [loading, setLoading ] = useState(true)
     const [ searchTerm, setSearchTerm ] = useState('a')
     const [cocktails, setCocktails ] = useState([])
+
+    const fetchDrink = async () =>{
+        try{
+
+        }catch(error){
+            console.log(error);
+        }
+    }
     return(
         <AppContext.Provider
         value = {{
