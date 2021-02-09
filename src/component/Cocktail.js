@@ -8,6 +8,7 @@ const  Cocktail = ({image, id, name, info, glass}) => {
                <div className="cocktail-footer">
                    <h3>{name}</h3>
                    <h3>{glass}</h3>
+                   <p>{info}</p>
                </div>
            </div>
         </article>
