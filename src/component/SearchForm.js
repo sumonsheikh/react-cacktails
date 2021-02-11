@@ -7,7 +7,7 @@ const SearchForm = () => {
     return (
         <section className="section search">
             <form className = "search-form">
-                <div className="search-control">
+                <div className="form-control">
                     <label htmlFor="name" >
                         search your favourite cocktail
                     </label>

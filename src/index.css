@@ -169,3 +169,34 @@ a{
   height: 20rem;
 object-fit: cover;
 }
+.search{
+  margin-top: 1rem;
+  padding-bottom: 0;
+
+}
+.search-form{
+  width: 800px;
+  margin: 0 auto;
+  max-width: 90vw;
+  background: #fff;
+  text-transform: capitalize;
+  border-radius: 8px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+
+}
+.form-control label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  color: #476A2E;
+  letter-spacing: 0.25rem;
+}
+.form-control input{
+  width: 100%;
+  border: none;
+  border-color: transparent;
+  background: rgb(206, 205, 205);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
