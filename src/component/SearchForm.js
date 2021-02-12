@@ -4,6 +4,10 @@ import {useGlobalContext} from '../context'
 const SearchForm = () => {
     const {setSearchTerm } = useGlobalContext()
     const searchValue = React.useRef('')
+
+    const searchCocktails =()=>{
+        setSearchTerm(searchValue.current.value)
+    }
     return (
         <section className="section search">
             <form className = "search-form">
@@ -11,7 +15,12 @@ const SearchForm = () => {
                     <label htmlFor="name" >
                         search your favourite cocktail
                     </label>
-                    <input type='text' id='name' ref={searchValue}/>
+                    <input 
+                    type='text'
+                    id='name' 
+                    ref={searchValue}
+                    onChange={searchCocktails}
+                    />
                 </div>
             </form>
         </section>
