@@ -1,9 +1,14 @@
 import React from 'react'
+import Loading from '../component/Loading'
+import {useParams, Link} from 'react-router-dom'
+const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='
+
 
 const  SingleCocktail = ()=> {
+    const {id } = useParams()
     return (
         <div>
-            <h2>Single Cocktail page</h2>
+            <h2>{id}</h2>
         </div>
     )
 }
