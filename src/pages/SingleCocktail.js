@@ -12,12 +12,49 @@ const  SingleCocktail = ()=> {
         setLoading(true);
         async function getCocktail (){
             try{
-                const response = await fetch(`${url}${url}`)
-                const data = await response.json();
+                const response = await fetch(`${url}${id}`)
+                const data = await response.json()
+                if(data.drinks){
+                    const { strDrink : name, 
+                        strDrinkThumb : images,
+                         strCategory : category,
+                        strAlcoholic : info, 
+                        strGlass: glass, 
+                        strInstructions: instructions,
+                         strIngredient1,
+                         strIngredient2,
+                        strIngredient3,
+                         strIngredient4,
+                          strIngredient5
+                    } = data.drinks[0]
+
+                    const {ingredient} = [
+                        strIngredient1,
+                         strIngredient2,
+                          strIngredient3,
+                           strIngredient4,
+                           strIngredient5
+                    ]
+                    const newCocktail ={
+                        name,
+                        images,
+                        category,
+                        info,
+                        glass,
+                        instructions,
+                        ingredient
+                    }
+                    setCocktail(newCocktail)
+                }else{
+                    setCocktail(null)
+                }
+                setLoading(false)
             }catch(error){
                 console.log(error);
+                setLoading(false)
             }
         }
+        getCocktail()
     },[id])
     return (
         <div>
