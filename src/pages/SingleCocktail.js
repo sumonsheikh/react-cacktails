@@ -28,7 +28,7 @@ const  SingleCocktail = ()=> {
                           strIngredient5
                     } = data.drinks[0]
 
-                    const {ingredient} = [
+                    const ingredient = [
                         strIngredient1,
                          strIngredient2,
                           strIngredient3,
@@ -104,7 +104,11 @@ const  SingleCocktail = ()=> {
                     </p>
                     <p>
                         <span className="drink-data">ingredients : </span>
-                     
+                      
+                        {ingredient.map((item, index)=>{
+                            return (<span key={index}> {item}</span>)
+                        })}
+                       
                     </p>
                 </div>
             </div>
